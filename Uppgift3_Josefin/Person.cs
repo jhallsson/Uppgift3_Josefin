@@ -6,30 +6,32 @@ namespace Uppgift3_Josefin
 {
     class Person
     {
-        private string fName;
+        private string fName, lName;
+        private int age, height, weight;
         public string FirstName
         {
             get { return fName; }
-            set { fName = value; }   //kalla på metod setName härifrån?
+            set { fName = value; }   
         }
-        /* this.fName=setName
-         */
-
-        
+        public string LastName
+        {
+            get { return lName; }
+            set { lName = value; }
+        }
+        public int Age
+        {
+            get { return age; }
+            set {age = value;   }
+        }
+        public int Height
+        {
+            get { return height; }
+            set { height = value; }
+        }
+        public int Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
     }
 }
-
-// private string fName, lName;
-//private float age, height, weight;
-
-//public string FirstName { get; set; }
-
-/*public string LastName { get; set; }
-    public int Height { get; set; }
-    public int Age { get; set; }*/
-
-/*public Person(string fName)
-{
-    //PersonHandler.SetName(person1, fName);
-    this.fName = fName;
-}*/
