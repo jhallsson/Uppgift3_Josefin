@@ -7,7 +7,8 @@ namespace Uppgift3_Josefin
     class Person
     {
         private string fName, lName;
-        private int age, height, weight;
+        private int age;
+        private double height, weight;
         public string FirstName
         {
             get { return fName; }
@@ -23,12 +24,12 @@ namespace Uppgift3_Josefin
             get { return age; }
             set {age = value;   }
         }
-        public int Height
+        public double Height
         {
             get { return height; }
             set { height = value; }
         }
-        public int Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
