@@ -8,25 +8,37 @@ namespace Uppgift3_Josefin
     {
         public Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
-            Person person = new Person { 
-                Age = age, 
-                FirstName = fName, 
-                LastName = lName, 
-                Height = height, 
-                Weight = weight 
-            };
+            Person person = new Person(age,fName, lName,height,weight);
+            /*,
+                fName,
+                lName,
+                height,
+                weight */
+            /*Age = age, 
+            FirstName = fName, 
+            LastName = lName, 
+            Height = height, 
+            Weight = weight */
+
             return person;
         }
         public void SetAge(Person pers, int age)
         {
-            
-            //ToDo: Sätt pers Age till age
             pers.Age = age;
-            Console.WriteLine("Handler: "+pers.Age);
-
         }
-        //ToDo: SetHeight
-        //ToDo: SetWeight
-        //ToDo: SetName / lastName
+        public void SetHeight(Person pers, double height)
+        {
+            pers.Height = height;
+        }
+        public void SetWeight(Person pers, double weight)
+        {
+            pers.Weight = weight;
+        }
+        public void SetName(Person pers, string fName, string lName)
+        {
+            pers.FirstName = fName;
+            pers.LastName = lName;
+        }
+        
     }
 }

@@ -6,6 +6,7 @@ namespace Uppgift3_Josefin
 {
     class Person
     {
+        
         private string fName, lName;
         private int age;
         private double height, weight;
@@ -33,6 +34,16 @@ namespace Uppgift3_Josefin
         {
             get { return weight; }
             set { weight = value; }
+        }
+        //ToDo: lägg till konstruktor
+        public Person(int age, string fName, string lName, double height, double weight)
+        {
+            Age = age;
+            FirstName = fName;
+            LastName = lName;
+            Height = height;
+            Weight = weight;
+
         }
     }
 }

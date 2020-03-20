@@ -7,17 +7,16 @@ namespace Uppgift3_Josefin
         static void Main(string[] args)
         {
             PersonHandler persHand = new PersonHandler();
-            
-            //ToDo: Instansera ny person?
-            Person pers= new Person();
-            
-            int age = 25;
-            persHand.SetAge(pers, age);
-            
 
-            Person kalle = persHand.CreatePerson(25, "Kalle","Karlsson",1.80,79.2);
+            //Person pers = new Person();
+            //int age = 25;
+            //persHand.SetAge(pers, age);
+
+            Person kalle = persHand.CreatePerson(25, "Kalle", "Karlsson", 1.83, 79.2);
+            Person lina = persHand.CreatePerson(36, "Lina", "Lund", 1.69, 65.30);
             
             Console.WriteLine($"{kalle.FirstName} {kalle.LastName}");
+            Console.WriteLine($"{lina.FirstName} {lina.Age}");
 
         }
     }
