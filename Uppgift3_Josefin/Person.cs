@@ -35,7 +35,6 @@ namespace Uppgift3_Josefin
             get { return weight; }
             set { weight = value; }
         }
-        //ToDo: lägg till konstruktor
         public Person(int age, string fName, string lName, double height, double weight)
         {
             Age = age;
