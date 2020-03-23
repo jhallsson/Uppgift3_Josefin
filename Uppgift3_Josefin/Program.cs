@@ -43,27 +43,27 @@ namespace Uppgift3_Josefin
             Console.WriteLine($"Häst-objekts stats: {horse.Stats()}\n");
 
             List<Animal> Animals= new List<Animal>();
-            List<Dog> Dogs = new List<Dog>();
             //Dogs.Add(new Horse("Pelikan", 30, 5, 1.5));
 
             Animals.Add(new Animal("Katt", 12, 5));
             Animals.Add(new Pelican("Pelikan", 30, 5, 1.5,30));
-            Animals.Add(new Bird("Blåmes", 0.2, 1, 0.3));
             Animals.Add(new Dog("Hund",28,8,"Labrador"));
+            Animals.Add(new Bird("Blåmes", 0.2, 1, 0.3));
 
             foreach (var animal in Animals)
             {
                 Console.WriteLine($"Stats för {animal.Name}: {animal.Stats()}");
             }
-
-            //ToDo: loopa endast hundar
-            /*foreach (Dog dog in Animals) 
+          
+            foreach (var animal in Animals)        
             {
-                Console.WriteLine("Stats för alla hundar i listan Animals");
-                Console.WriteLine(dog.Stats());
-                //Console.WriteLine(Dog.Talk());
-                
-            }*/
+                if (animal.GetType() == typeof(Dog))    //lyckas inte göra det på något annat sätt!
+                {
+                    Console.WriteLine("\nStats för alla hundar i listan Animals");
+                    Console.WriteLine(animal.Stats());         //dog.Stats=string
+                    Console.WriteLine(animal.Talk());
+                }
+            }
             Console.WriteLine();
             
             //--- UE-MESSAGES ---
