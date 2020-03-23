@@ -19,9 +19,9 @@ namespace Uppgift3_Josefin
         {
             return $"{Name}, {Weight}, {Age}";
         }
-        public virtual string Talk() //ToDo: Finns det ett annat sätt att komma åt Talk()? 
+        /*public virtual string Talk() //ToDo: Finns det ett annat sätt att komma åt Talk()? 
         {
-            return "Animal.Talk() (overrided)";
-        }
+            return "Animal.Talk() (overrided)"; //Behövs inte enbart vanlig klass i Dog!
+        }*/
     }
 }

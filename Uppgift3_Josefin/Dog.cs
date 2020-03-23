@@ -13,9 +13,9 @@ namespace Uppgift3_Josefin
         }
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {Breed}";
+            return $"{base.Stats()} {Breed}";
         }
-        public override string Talk()
+        public /*override*/ string Talk()
         {
             return "VOFF!";
         }

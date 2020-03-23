@@ -57,11 +57,12 @@ namespace Uppgift3_Josefin
           
             foreach (var animal in Animals)        
             {
-                if (animal.GetType() == typeof(Dog))    //lyckas inte göra det på något annat sätt!
+                //if (animal.GetType() == typeof(Dog))    //lyckas inte göra det på något annat sätt!
+                if(animal is Dog dog) //fråga om typ, casta tillbaka till typ Dog i variabel dog
                 {
                     Console.WriteLine("\nStats för alla hundar i listan Animals");
                     Console.WriteLine(animal.Stats());         //dog.Stats=string
-                    Console.WriteLine(animal.Talk());
+                    Console.WriteLine(dog.Talk());   //casta för att få fram
                 }
             }
             Console.WriteLine();

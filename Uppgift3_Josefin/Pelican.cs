@@ -13,7 +13,7 @@ namespace Uppgift3_Josefin
         }
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {WingSpan}, {FishCapacity}";
+            return $"{base.Stats()} {FishCapacity}";
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Uppgift3_Josefin
         }
         public override string Stats()
         {
-            return $"{Name}, {Weight}, {Age}, {WingSpan}";
+            return $"{base.Stats()} {WingSpan}";
         }
     }
 }
